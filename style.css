@@ -117,13 +117,15 @@ legend {
     --accent-green: #196d56;
     --bg-color: #fff7ee;
     --dark-color: #1f1f1f;
+    --text-color:#2B2B2B
 }
 
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    color: black;
+    color: var(--text-color);
 }
+
 .intro {
     height: 100vh;
     max-height: 100vh;
@@ -419,7 +421,8 @@ h2 {
     background-color: white;
     padding: 1em;
     border-radius: 10px;
-    height: 300px;
+    min-height: 300px;
+    /* outline: solid 1px coral; */
 }
 
 .action-card h3 {
@@ -466,4 +469,148 @@ h2 {
     background-image: url("./assets/images/bannerBg.svg");
     color: white;
     font-weight: 600;
+}
+
+
+
+.project-section{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.project-section h3{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-items: center; */
+    gap: 1em;
+    row-gap: 2em;
+}
+
+.projects-container img{
+    margin-bottom: 1em;
+}
+
+.review-section{
+    margin-top: 2em;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.reviews-container{
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.review{
+    padding: 1em;
+    background-color: white;
+    height: 350px;
+    position: relative;
+    min-width: 200px;
+    width: 25%;
+    /* width: fit-content; */
+}
+
+.review h3{
+    font-weight: 600;
+    margin-block: .5em;
+}
+
+.review>p{
+    color: #767676;
+    font-size: .9em;
+    margin-bottom: 2em;
+}
+
+.profile-container{
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.map-section{
+    margin-top: 5em;
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.map-section> img{
+    max-width: 50%;
+}
+
+.contacts{
+    background: url(./assets/images/contactBgImage.svg);
+    padding: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacts button{
+    width: 80%;
+    margin-bottom: 2em;
+    transition: all .3s;
+}
+
+.contacts button:hover{
+    transform:scale(1.1);
+}
+
+.contacts .bold{
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.button-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+footer{
+    background-color: var(--dark-color);
+    color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    font-weight: 600;
+}
+
+footer ul{
+    display: flex;
+    gap: 2em;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:1600px){
+    body{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .review{
+        width: 35%;
+    }
+    .reviews-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
