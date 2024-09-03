@@ -17,17 +17,50 @@
         <div class="intro">
             <header>
                 <img src="./assets/images/logo.svg" alt="" />
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <aside>
+                    <div>
+                        <img src="./assets/images/logo.svg" alt="" />
+                        <button id="hide-burger">
+                            <img src="./assets/images/x.svg" alt="" />
+                        </button>
+                    </div>
+                    <nav>
+                        <ul class="nav-links-container">
+                            <li class="nav-menu-link">
+                                <a href="#services">Услуги</a>
+                            </li>
+                            <li class="nav-menu-link">
+                                <a href="#partners">Тарифы</a>
+                            </li>
+                            <li class="nav-menu-link">
+                                <a href="#actions">Подключение</a>
+                            </li>
+                            <li class="nav-menu-link">
+                                <a href="#map">Карта</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
                 <nav>
                     <ul class="nav-links-container">
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Тарифы</a></li>
-                        <li><a href="">Подключение</a></li>
-                        <li><a href="">Карта</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#partners">Тарифы</a></li>
+                        <li><a href="#actions">Подключение</a></li>
+                        <li><a href="#map">Карта</a></li>
                     </ul>
                 </nav>
-                <p class="accent-green">+7 (812) 240 90 24</p>
+                <a class="phone-number" href="tel:+78122409024"
+                    >+7 (812) 240 90 24</a
+                >
             </header>
             <section class="cover">
+                <img
+                    id="logo-for-mobile"
+                    src="./assets/images/logoForBanner.svg"
+                    alt=""
+                />
                 <div>
                     <h1>
                         Загородный независимый и беспроводной интернет под ключ
@@ -39,7 +72,7 @@
                         сразу наслаждаться беспроводным интернетом!
                     </p>
                 </div>
-                <ul class="checked-list">
+                <ul class="advantage-list checked-list">
                     <li>Абонентская плата от 190₽/мес</li>
                     <li>Подключение до 250КМ от КАД</li>
                     <li>Бесплатный замер сигнала и подбор оборудования</li>
@@ -48,101 +81,115 @@
                 <div class="button-container">
                     <button class="yellow-button">Оставить заявку</button>
                     <span>или</span>
-                    <button class="black-button">Позвонить</button>
+                    <button class="black-button">
+                        <a href="tel:+78122409024">Позвонить</a>
+                    </button>
                 </div>
                 <img src="./assets/images/man1.png" alt="" />
                 <!-- <img src="./assets/images/manBg.png" alt="" /> -->
             </section>
         </div>
-        <section class="services">
+        <section id="services" class="services">
             <h2>Пакеты услуг</h2>
             <div class="cards-container">
                 <div class="card">
                     <div class="card-img-container">
                         <img src="./assets/images/Econom.svg" alt="" />
                     </div>
-                    <h3>Эконом</h3>
-                    <p>От 7 500 ₽</p>
-                    <ul class="checked-list">
-                        <li>Скорость до 20 мбит/с</li>
-                        <li>Модем</li>
-                        <li>Wi-Fi роутер IEEE.11n</li>
-                    </ul>
-                    <div class="countdown countdown1">
-                        <p class="red-text">До -15%</p>
-                        <p>при заказе до</p>
-                        <p class="timer-container"></p>
+                    <div class="card-text">
+                        <h3>Эконом</h3>
+                        <p>От 7 500 ₽</p>
+                        <ul class="checked-list">
+                            <li>Скорость до 20 мбит/с</li>
+                            <li>Модем</li>
+                            <li>Wi-Fi роутер IEEE.11n</li>
+                        </ul>
                     </div>
-                    <button class="yellow-button">Оставить заявку</button>
+                    <div class="bottom-button-container">
+                        <div class="countdown countdown1">
+                            <p class="red-text">До -15%</p>
+                            <p>при заказе до</p>
+                            <p class="timer-container"></p>
+                        </div>
+                        <button class="yellow-button">Оставить заявку</button>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="card-img-container">
                         <img src="./assets/images/Based.svg" alt="" />
                     </div>
-
-                    <h3>Базовый</h3>
-                    <p>От 13 000 ₽</p>
-                    <ul class="checked-list">
-                        <li>Скорость до 50 мбит/с</li>
-                        <li>Антенна 14 Dbi</li>
-                        <li>Модем</li>
-                        <li>Wi-Fi роутер</li>
-                        <li>Пигтейл</li>
-                    </ul>
-                    <div class="countdown countdown2">
-                        <p class="red-text">До -15%</p>
-                        <p>при заказе до</p>
-                        <p class="timer-container"></p>
-
+                    <div class="card-text">
+                        <h3>Базовый</h3>
+                        <p>От 13 000 ₽</p>
+                        <ul class="checked-list">
+                            <li>Скорость до 50 мбит/с</li>
+                            <li>Антенна 14 Dbi</li>
+                            <li>Модем</li>
+                            <li>Wi-Fi роутер</li>
+                            <li>Пигтейл</li>
+                        </ul>
                     </div>
-                    <button class="yellow-button">Оставить заявку</button>
+                    <div class="bottom-button-container">
+                        <div class="countdown countdown2">
+                            <p class="red-text">До -15%</p>
+                            <p>при заказе до</p>
+                            <p class="timer-container"></p>
+                        </div>
+                        <button class="yellow-button">Оставить заявку</button>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="card-img-container">
                         <img src="./assets/images/Based+.svg" alt="" />
                     </div>
-                    <h3>Базовый +</h3>
-                    <p>От 22 000 ₽</p>
-                    <ul class="checked-list">
-                        <li>Скорость до 100 мбит/с</li>
-                        <li>Антенна 18 Dbi</li>
-                        <li>Модем</li>
-                        <li>Wi-Fi роутер</li>
-                        <li>Пигтейл</li>
-                    </ul>
-                    <div class="countdown countdown3">
-                        <p class="red-text">До -15%</p>
-                        <p>при заказе до</p>
-                        <p class="timer-container"></p>
-
+                    <div class="card-text">
+                        <h3>Базовый +</h3>
+                        <p>От 22 000 ₽</p>
+                        <ul class="checked-list">
+                            <li>Скорость до 100 мбит/с</li>
+                            <li>Антенна 18 Dbi</li>
+                            <li>Модем</li>
+                            <li>Wi-Fi роутер</li>
+                            <li>Пигтейл</li>
+                        </ul>
                     </div>
-                    <button class="yellow-button">Оставить заявку</button>
+                    <div class="bottom-button-container">
+                        <div class="countdown countdown3">
+                            <p class="red-text">До -15%</p>
+                            <p>при заказе до</p>
+                            <p class="timer-container"></p>
+                        </div>
+                        <button class="yellow-button">Оставить заявку</button>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="card-img-container">
                         <img src="./assets/images/image.svg" alt="" />
                     </div>
-
-                    <h3 class="accent-yellow">Супер</h3>
-                    <p>От 76 000 ₽</p>
-                    <ul class="checked-list">
-                        <li>Скорость до 200 мбит/с</li>
-                        <li>Параболическая антенна 27 Dbi</li>
-                        <li>Интернет-центр с агрегатной частотой</li>
-                        <li>Пигтейл класса Супер</li>
-                    </ul>
-                    <div class="countdown countdown4">
-                        <p class="red-text">До -15%</p>
-                        <p>при заказе до</p>
-                        <p class="timer-container"></p>
-
+                    <div class="card-text">
+                        <h3 class="accent-yellow">Супер</h3>
+                        <p>От 76 000 ₽</p>
+                        <ul class="checked-list">
+                            <li>Скорость до 200 мбит/с</li>
+                            <li>Параболическая антенна 27 Dbi</li>
+                            <li>Интернет-центр с агрегатной частотой</li>
+                            <li>Пигтейл класса Супер</li>
+                        </ul>
                     </div>
-                    <button class="yellow-button">Оставить заявку</button>
+
+                    <div class="bottom-button-container">
+                        <div class="countdown countdown4">
+                            <p class="red-text">До -15%</p>
+                            <p>при заказе до</p>
+                            <p class="timer-container"></p>
+                        </div>
+                        <button class="yellow-button">Оставить заявку</button>
+                    </div>
                 </div>
             </div>
         </section>
         <div class="beige-bg">
-            <section class="partners">
+            <section id="partners" class="partners">
                 <h2>Выгодные тарифы от партнеров</h2>
                 <div class="cards-container">
                     <div class="card partners-card">
@@ -164,7 +211,7 @@
                 </div>
             </section>
 
-            <section class="actions">
+            <section id="actions" class="actions">
                 <h2>Порядок действий</h2>
                 <div class="actions-container">
                     <div class="action-card">
@@ -256,8 +303,10 @@
                     </h2>
                     <div class="button-container">
                         <button class="green-button">Оставить заявку</button>
-                        <span>или</span>
-                        <button class="black-button">Позвонить</button>
+                        <p>или</p>
+                        <button class="black-button">
+                            <a href="tel:+78122409024">Позвонить</a>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -265,22 +314,25 @@
                 <h2>Наши работы в ЛО и других регионах</h2>
                 <div class="projects-container">
                     <div class="project-card">
-                        <img src="./assets/images/project1.png" alt="">
+                        <img src="./assets/images/project1.png" alt="" />
                         <h3>Загородный интернет</h3>
                         <p>Консультация и выезд на замеры бесплатно</p>
                     </div>
                     <div class="project-card">
-                        <img src="./assets/images/project2.png" alt="">
-                        <h3>Усиление сотового сигнала всех операторов в любой глуши</h3>
-                        
+                        <img src="./assets/images/project2.png" alt="" />
+                        <h3>
+                            Усиление сотового сигнала всех операторов в любой
+                            глуши
+                        </h3>
                     </div>
                     <div class="project-card">
-                        <img src="./assets/images/project3.png" alt="">
-                        <h3>Видеонаблюдение в офис, частный дом, склады и т.д</h3>
-                       
+                        <img src="./assets/images/project3.png" alt="" />
+                        <h3>
+                            Видеонаблюдение в офис, частный дом, склады и т.д
+                        </h3>
                     </div>
                     <div class="project-card">
-                        <img src="./assets/images/project4.png" alt="">
+                        <img src="./assets/images/project4.png" alt="" />
                         <h3>Работы любой сложности и в любой местности</h3>
                     </div>
                 </div>
@@ -289,11 +341,14 @@
                 <h2>Наши отзывы</h2>
                 <div class="reviews-container">
                     <div class="review">
-                        <img src="./assets/images/Rating.svg" alt="">
-                        <h3>Рекомендую на 1000000%! </h3>
-                        <p>Выбирайте именно этого специалиста, вы НЕ пожалеете. После долгих поисков...</p>
+                        <img src="./assets/images/Rating.svg" alt="" />
+                        <h3>Рекомендую на 1000000%!</h3>
+                        <p>
+                            Выбирайте именно этого специалиста, вы НЕ пожалеете.
+                            После долгих поисков...
+                        </p>
                         <div class="profile-container">
-                            <img src="./assets/images/reviews/1.png" alt="">
+                            <img src="./assets/images/reviews/1.png" alt="" />
                             <div>
                                 <p>Валерия</p>
                                 <p>12 июля</p>
@@ -301,11 +356,15 @@
                         </div>
                     </div>
                     <div class="review">
-                        <img src="./assets/images/Rating.svg" alt="">
+                        <img src="./assets/images/Rating.svg" alt="" />
                         <h3>Интернет работает</h3>
-                        <p>Услуга была качественно оказана, быстро приехали и все установили. Интернет работает, очень удобный вариант для загорода.</p>
+                        <p>
+                            Услуга была качественно оказана, быстро приехали и
+                            все установили. Интернет работает, очень удобный
+                            вариант для загорода.
+                        </p>
                         <div class="profile-container">
-                            <img src="./assets/images/reviews/2.png" alt="">
+                            <img src="./assets/images/reviews/2.png" alt="" />
                             <div>
                                 <p>Валерия</p>
                                 <p>12 июля</p>
@@ -313,11 +372,15 @@
                         </div>
                     </div>
                     <div class="review">
-                        <img src="./assets/images/Rating.svg" alt="">
+                        <img src="./assets/images/Rating.svg" alt="" />
                         <h3>Отличная работа</h3>
-                        <p>Услуга оказана. Отличная работа. Цена соответствует качеству. Внимательные, приятные ребята. Помогли повесить телевизор...</p>
+                        <p>
+                            Услуга оказана. Отличная работа. Цена соответствует
+                            качеству. Внимательные, приятные ребята. Помогли
+                            повесить телевизор...
+                        </p>
                         <div class="profile-container">
-                            <img src="./assets/images/reviews/3.png" alt="">
+                            <img src="./assets/images/reviews/3.png" alt="" />
                             <div>
                                 <p>Валерия</p>
                                 <p>12 июля</p>
@@ -325,11 +388,15 @@
                         </div>
                     </div>
                     <div class="review">
-                        <img src="./assets/images/Rating.svg" alt="">
+                        <img src="./assets/images/Rating.svg" alt="" />
                         <h3>За пару часов все сделали</h3>
-                        <p>Приехали в день звонка, цену заранее обозначили, за пару часов все сделали, заодно помогли настроить новый телевизор...</p>
+                        <p>
+                            Приехали в день звонка, цену заранее обозначили, за
+                            пару часов все сделали, заодно помогли настроить
+                            новый телевизор...
+                        </p>
                         <div class="profile-container">
-                            <img src="./assets/images/reviews/4.png" alt="">
+                            <img src="./assets/images/reviews/4.png" alt="" />
                             <div>
                                 <p>Валерия</p>
                                 <p>12 июля</p>
@@ -338,47 +405,52 @@
                     </div>
                 </div>
             </section>
-            <section class="map-section">
-                <img src="./assets/images/Map.webp" alt="">
+            <section id="map" class="map-section">
+                <div id="map-image-container">
+                    <img id="map-image" src="./assets/images/Map.webp" alt="" />
+                </div>
+                <!-- <div id="map-image"></div> -->
                 <div class="contacts">
                     <h2>Все еще не уверены?</h2>
-                    <p>Получите консультацию от специалиста совсем бесплатно!</p>
+                    <p>
+                        Получите консультацию от специалиста совсем бесплатно!
+                    </p>
                     <p class="bold">С 9:00 до 21:00 без выходных!</p>
                     <div class="button-logo-container">
                         <div>
-                            <button class="yellow-button">+7 (812) 240-90-24</button>
-                            <button class="black-button">Оставить заявку</button>
+                            <button class="yellow-button">
+                                <a href="tel:+78122409024"
+                                    >+7 (812) 240 90 24</a
+                                >
+                            </button>
+                            <button class="black-button">
+                                Оставить заявку
+                            </button>
                         </div>
-                        <img src="./assets/images/bigLogo.svg" alt="">
+                        <img src="./assets/images/bigLogo.svg" alt="" />
                     </div>
                 </div>
             </section>
         </div>
         <footer>
-            <img src="./assets/images/logo.svg" alt="">
+            <img src="./assets/images/logo.svg" alt="" />
             <ul>
                 <li>
-                    <a href="">
-                        Услуги
-                    </a>
+                    <a href="#services"> Услуги </a>
                 </li>
                 <li>
-                    <a href="">
-                        Тарифы
-                    </a>
+                    <a href="#partners"> Тарифы </a>
                 </li>
                 <li>
-                    <a href="">
-                        Подключение
-                    </a>
+                    <a href="#actions"> Подключение </a>
                 </li>
                 <li>
-                    <a href="">
-                        Карта
-                    </a>
+                    <a href="#map"> Карта </a>
+                </li>
+                <li>
+                    <p><a href="tel:+78122409024">+7 (812) 240 90 24</a></p>
                 </li>
             </ul>
-            <p>+7 (812) 240 90 24</p>
         </footer>
     </body>
 </html>
