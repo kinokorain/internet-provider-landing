@@ -303,6 +303,7 @@ h2 {
     min-width: 100px;
     background-color: var(--bg-color);
     transition: all 0.3s;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -518,11 +519,11 @@ h2 {
 .review {
     padding: 1em;
     background-color: white;
-    height: 350px;
-    position: relative;
     min-width: 200px;
     width: 25%;
     /* width: fit-content; */
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .review h3 {
@@ -533,11 +534,11 @@ h2 {
 .review > p {
     color: #767676;
     font-size: 0.9em;
-    margin-bottom: 2em;
 }
 
 .profile-container {
-    position: absolute;
+    padding-top: 2em;
+    /* position: absolute; */
     bottom: 10%;
     display: flex;
     gap: 1em;
@@ -654,6 +655,14 @@ aside .nav-links-container {
 aside > div {
     display: flex;
     justify-content: space-between;
+}
+
+.semi-bold{
+    font-weight: 600;
+}
+
+.action-card-6{
+    display: flex;
 }
 
 @media screen and (min-width: 1900px) {
