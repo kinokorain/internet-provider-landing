@@ -14,7 +14,7 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="intro">
+        <div class="`">
             <header>
                 <img src="./assets/images/logo.svg" alt="Мастер Ленинград" />
                 <input type="checkbox" id="menu-toggle" />
@@ -52,7 +52,7 @@
                     </ul>
                 </nav>
                 <a class="phone-number" href="tel:+78122409024"
-                    >+7 (812) 240 90 24</a
+                    >+7 (812) 240-90-24</a
                 >
             </header>
             <section class="cover">
@@ -80,12 +80,10 @@
                 </ul>
                 <div class="button-container">
                     <button class="yellow-button">Оставить заявку</button>
-                    <span>или</span>
-                    <button class="black-button">
-                        <a href="tel:+78122409024">Позвонить</a>
-                    </button>
+                    <span class="semi-bold">или</span>
+                    <a class="black-button" href="tel:+78122409024">Позвонить</a>
                 </div>
-                <img src="./assets/images/man1.png" alt="Мужчина улыбается из-за интернета" />
+                <img id="cover-img" src="./assets/images/man1.png" alt="Мужчина улыбается из-за интернета" />
             </section>
         </div>
         <section id="services" class="services">
@@ -107,7 +105,7 @@
                     <div class="bottom-button-container">
                         <div class="countdown countdown1">
                             <p class="red-text">До -15%</p>
-                            <p class="semi-bold">при заказе до</p>
+                            <p class="semi-bold">При заказе до</p>
                             <p class="timer-container semi-bold"></p>
                         </div>
                         <button class="yellow-button">Оставить заявку</button>
@@ -131,7 +129,7 @@
                     <div class="bottom-button-container">
                         <div class="countdown countdown2">
                             <p class="red-text">До -15%</p>
-                            <p class="semi-bold">при заказе до</p>
+                            <p class="semi-bold">При заказе до</p>
                             <p class="timer-container semi-bold"></p>
                         </div>
                         <button class="yellow-button">Оставить заявку</button>
@@ -155,7 +153,7 @@
                     <div class="bottom-button-container">
                         <div class="countdown countdown3">
                             <p class="red-text">До -15%</p>
-                            <p class="semi-bold">при заказе до</p>
+                            <p class="semi-bold">При заказе до</p>
                             <p  class="timer-container semi-bold"></p>
                         </div>
                         <button class="yellow-button">Оставить заявку</button>
@@ -179,8 +177,8 @@
                     <div class="bottom-button-container">
                         <div class="countdown countdown4">
                             <p class="red-text">До -15%</p>
-                            <p class="semi-bold">при заказе до</p>
-                            <p class="timer-con class="semi-bold"tainer semi-bold"></p>
+                            <p class="semi-bold">При заказе до</p>
+                            <p class="timer-container semi-bold""></p>
                         </div>
                         <button class="yellow-button">Оставить заявку</button>
                     </div>
@@ -216,7 +214,7 @@
                     <div class="action-card">
                         <div class="action-top-part">
                             <div>
-                                <p>01</p>
+                                <p class="semi-bold">01</p>
                                 <img src="./assets/images/arrows.svg" alt="" />
                             </div>
                             <h3>Связаться с нами</h3>
@@ -229,7 +227,7 @@
                     <div class="action-card">
                         <div class="action-top-part">
                             <div>
-                                <p>02</p>
+                                <p class="semi-bold">02</p>
                                 <img src="./assets/images/arrows.svg" alt="" />
                             </div>
                             <h3>Бесплатный анализ</h3>
@@ -242,7 +240,7 @@
                     <div class="action-card">
                         <div class="action-top-part">
                             <div>
-                                <p>03</p>
+                                <p class="semi-bold">03</p>
                                 <img src="./assets/images/arrows.svg" alt="" />
                             </div>
                             <h3>Подбор оборудования</h3>
@@ -255,7 +253,7 @@
                     <div class="action-card">
                         <div class="action-top-part">
                             <div>
-                                <p>04</p>
+                                <p class="semi-bold">04</p>
                                 <img src="./assets/images/arrows.svg" alt="" />
                             </div>
                             <h3>Монтаж и настройка</h3>
@@ -268,7 +266,7 @@
                     <div class="action-card">
                         <div class="action-top-part">
                             <div>
-                                <p>05</p>
+                                <p class="semi-bold">05</p>
                                 <img src="./assets/images/arrows.svg" alt="" />
                             </div>
                             <h3>Оформление договора</h3>
@@ -281,7 +279,7 @@
                     <div class="action-card">
                         <div class="action-top-part">
                             <div>
-                                <p>06</p>
+                                <p class="semi-bold">06</p>
                                 <img src="./assets/images/arrows.svg" alt="" />
                             </div>
                             <h3>Результат</h3>
@@ -308,10 +306,8 @@
                     </h2>
                     <div class="button-container">
                         <button class="green-button">Оставить заявку</button>
-                        <p>или</p>
-                        <button class="black-button">
-                            <a href="tel:+78122409024">Позвонить</a>
-                        </button>
+                        <p class="semi-bold">или</p>
+                        <a class="black-button" href="tel:+78122409024">Позвонить</a>
                     </div>
                 </div>
             </section>
@@ -410,11 +406,13 @@
                     </div>
                 </div>
             </section>
+
             <section id="map" class="map-section">
+
                 <div id="map-image-container">
                     <img id="map-image" src="./assets/images/Map.webp" alt="Карта подключения, Ленинградская область" />
                 </div>
-                <!-- <div id="map-image"></div> -->
+
                 <div class="contacts">
                     <h2>Все еще не уверены?</h2>
                     <p>
@@ -423,11 +421,7 @@
                     <p class="bold">С 9:00 до 21:00 без выходных!</p>
                     <div class="button-logo-container">
                         <div>
-                            <button class="yellow-button">
-                                <a href="tel:+78122409024"
-                                    >+7 (812) 240 90 24</a
-                                >
-                            </button>
+                            <a class="yellow-button" href="tel:+78122409024">+7 (812) 240-90-24</a>
                             <button class="black-button">
                                 Оставить заявку
                             </button>
@@ -435,7 +429,9 @@
                         <img src="./assets/images/bigLogo.svg" alt="Мастер Ленинград" />
                     </div>
                 </div>
+
             </section>
+
         </div>
         <footer>
             <img src="./assets/images/logo.svg" alt="Мастер Ленинград" />
@@ -453,7 +449,7 @@
                     <a href="#map"> Карта </a>
                 </li>
                 <li>
-                    <p><a href="tel:+78122409024">+7 (812) 240 90 24</a></p>
+                    <p><a href="tel:+78122409024">+7 (812) 240-90-24</a></p>
                 </li>
             </ul>
         </footer>
